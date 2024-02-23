@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf Demo</title>
+    <link rel="stylesheet" th:href="@{/css/demo.css}"/>
+</head>
+<body>
+<p th:text="'Name: ' + ${student.firstName}"/>
+<p th:text="'Last name: ' + ${student.lastName}" />
+<p th:text="'Country: ' + ${student.country}" />
+<p th:text="'Favourite language: ' + ${student.favLanguage}" />
+<p th:text="'Favourite OS: ' + ${student.favOS}" />
+
+</body>
+</html>
